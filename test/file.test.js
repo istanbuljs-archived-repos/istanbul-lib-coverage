@@ -293,8 +293,8 @@ describe('base coverage', function () {
         var c = new FileCoverage({
                 path: '/path/to/file',
                 branchMap: {
-                    1: {line: 1},
-                    2: {line: 2}
+                    1: {loc: { start: { line: 1, column: 0}, end: { line: 1, column: 50} } },
+                    2: {loc: { start: { line: 2, column: 0}, end: { line: 2, column: 80} } }
                 },
                 fnMap: {},
                 statementMap: {},
